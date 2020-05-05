@@ -52,8 +52,8 @@ h4 {
 .centrar-texto {
   text-align: center;
 }
-.d-block{
-  display: block!important;
+.d-block {
+  display: block !important;
 }
 /**Botonoes**/
 .boton {
@@ -74,6 +74,10 @@ h4 {
 }
 
 /*Header*/
+.site-header {
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
 .site-header.inicio {
   background-image: url(../img/header.jpg);
   background-position: center center;
@@ -162,7 +166,6 @@ h4 {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-
 }
 .iconos-caracteristicas li {
   /**flex: 1;**/
@@ -177,15 +180,14 @@ h4 {
 }
 /**Contacto Home**/
 .imagen-contacto {
-  background-image: url(../img/encuentra.jpg) ;
+  background-image: url(../img/encuentra.jpg);
   background-position: center center;
   background-size: cover;
   height: 40rem;
   display: flex;
   align-items: center;
-
 }
-.contenido-contacto{
+.contenido-contacto {
   flex: 1;
   color: #ffffff;
 }
@@ -199,11 +201,10 @@ h4 {
   justify-content: space-between;
 }
 .seccion-inferior .blog {
-
   flex-basis: 60%;
 }
 .seccion-inferior .testimoniales {
-  flex-basis: calc(40% - 2rem) ;
+  flex-basis: calc(40% - 2rem);
 }
 .entrada-blog {
   display: flex;
@@ -211,14 +212,13 @@ h4 {
   margin-bottom: 2rem;
 }
 .entrada-blog:last-of-type {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 .entrada-blog .imagen {
-  flex-basis:40% ;
-
+  flex-basis: 40%;
 }
 .entrada-blog .texto-entrada {
-flex-basis: calc(60% - 3rem);
+  flex-basis: calc(60% - 3rem);
 }
 .texto-entrada a {
   color: #000000;
@@ -230,17 +230,16 @@ flex-basis: calc(60% - 3rem);
 }
 
 .texto-entrada h4::after {
-  content: '';
+  content: "";
   display: block;
   width: 15rem;
-  height: .5rem;
+  height: 0.5rem;
   background-color: #71b100;
   margin-top: 1rem;
-
 }
 .texto-entrada span {
   color: #e08709;
-} 
+}
 /***Testimonial**/
 .testimonial {
   background-color: #71b100;
@@ -253,7 +252,7 @@ flex-basis: calc(60% - 3rem);
   text-align: right;
 }
 .testimonial blockquote::before {
-  content: '';
+  content: "";
   background-image: url(../img/comilla.svg);
   width: 4rem;
   height: 4rem;
@@ -271,7 +270,7 @@ flex-basis: calc(60% - 3rem);
   background-color: #333333;
   margin: 0;
 }
-.contenedor-footer{
+.contenedor-footer {
   padding: 3rem 0;
   display: flex;
   justify-content: space-between;
@@ -279,4 +278,16 @@ flex-basis: calc(60% - 3rem);
 .copyright {
   margin: 0;
   color: #ffffff;
+}
+/** Internas **/
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem 0 3rem 0;
 }
